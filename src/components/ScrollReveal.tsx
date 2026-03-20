@@ -49,9 +49,9 @@ const ScrollReveal = ({
   }, [animation, delay, duration, threshold]);
 
   return (
-    <Tag ref={ref as any} className={`opacity-0 ${className}`}>
+    <div ref={ref} className={`opacity-0 ${className}`}>
       {children}
-    </Tag>
+    </div>
   );
 };
 
