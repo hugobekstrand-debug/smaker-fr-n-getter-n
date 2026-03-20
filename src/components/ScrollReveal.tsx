@@ -26,8 +26,8 @@ const ScrollReveal = ({
   delay = 0,
   duration,
   threshold = 0.15,
-  as: Tag = "div",
 }: ScrollRevealProps) => {
+  const Tag = as;
   const ref = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
