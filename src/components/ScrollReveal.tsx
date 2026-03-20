@@ -16,7 +16,6 @@ interface ScrollRevealProps {
   delay?: number;
   duration?: number;
   threshold?: number;
-  as?: keyof JSX.IntrinsicElements;
 }
 
 const ScrollReveal = ({
@@ -27,7 +26,6 @@ const ScrollReveal = ({
   duration,
   threshold = 0.15,
 }: ScrollRevealProps) => {
-  const Tag = as;
   const ref = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
